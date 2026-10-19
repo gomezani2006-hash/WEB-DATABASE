@@ -1,0 +1,423 @@
+/* ========================================
+   GLOBAL STYLES & COLOR PALETTE
+   ======================================== */
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #ecf0f1;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+    --border-color: #bdc3c7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: #ffffff;
+}
+
+/* ========================================
+   HEADER & FOOTER
+   ======================================== */
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--light-bg);
+    font-style: italic;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    border-top: 4px solid var(--secondary-color);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+nav li {
+    margin: 0.5rem;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* ========================================
+   MAIN CONTENT & SECTIONS
+   ======================================== */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.content-section {
+    padding: 2rem 1.5rem;
+    margin: 2rem 0;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: box-shadow 0.3s ease;
+}
+
+.content-section:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.content-section h3 {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+/* ========================================
+   LISTS
+   ======================================== */
+
+ul, ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.8;
+}
+
+/* ========================================
+   PHOTO GALLERY
+   ======================================== */
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+figure {
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+figcaption {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* ========================================
+   MEDIA (VIDEO & AUDIO)
+   ======================================== */
+
+.media-container {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--accent-color);
+    border-radius: 4px;
+}
+
+.media-container h3 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
+video, audio {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    display: block;
+    border-radius: 4px;
+    background-color: var(--light-bg);
+}
+
+/* ========================================
+   TABLE
+   ======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+caption {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+tbody tr:hover {
+    background-color: #e8f4f8;
+}
+
+/* ========================================
+   FORMS
+   ======================================== */
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .tagline {
+        font-size: 0.95rem;
+    }
+
+    nav ul {
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 0 0.5rem;
+    }
+
+    .content-section {
+        padding: 1.5rem 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.4rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 0.6rem 0.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        padding: 0.25rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    nav li {
+        margin: 0.25rem;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 0.6rem;
+        text-align: center;
+    }
+
+    .content-section {
+        padding: 1rem 0.8rem;
+        margin: 1rem 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea,
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}
+audio {
+    display: block;
+    width: 300px;
+    margin-top: 15px;
+}
