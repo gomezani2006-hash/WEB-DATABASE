@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica Nankamba - Web Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Monica Nankamba</h1>
+        <p class="tagline">Engineering & ICT Student | Web Developer in Progress</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">My Hobbies</a></li>
+            <li><a href="#learning">Learning Plan</a></li>
+            <li><a href="#photos">My Photos</a></li>
+            <li><a href="#media">My Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://www.w3schools.com/whatis/whatis_frontend.asp" target="_blank">Learn Web Dev</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Monica Nankamba, a 21-year-old engineering student at Mulungushi University studying in the School of Engineering and Technology. I'm passionate about learning web technologies and aspire to build engaging, user-friendly digital experiences. I'm currently studying the fundamentals of web development through ICT251, combining creativity with technical skills to solve real-world problems. My goal is to become proficient in front-end development and eventually specialize in cybersecurity to protect web applications and user data.
+            </p>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <p>In my free time, I enjoy:</p>
+            <ul>
+                <li>Reading - I love diving into novels and tech articles</li>
+                <li>Drawing - Creative sketching helps me relax and express ideas visually</li>
+                <li>Singing - Music is my passion and a great stress reliever</li>
+            </ul>
+            <h3>How I'll Improve My Web Skills</h3>
+            <ol>
+                <li>Practice building small projects every week, starting with forms and responsive layouts</li>
+                <li>Study CSS frameworks like Bootstrap to speed up development and improve design consistency</li>
+                <li>Work through real-world challenges on platforms like CodePen and GitHub to build my portfolio</li>
+            </ol>
+        </section>
+
+        <!-- Learning Plan Section -->
+        <section id="learning" class="content-section">
+            <h2>My Learning Plan</h2>
+            <table>
+                <caption>Weekly Web Learning Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Practice Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML Semantics</td>
+                        <td>Build a properly structured page with header, nav, main, footer</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS Layout & Flexbox</td>
+                        <td>Create a responsive navigation menu with flexbox</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Forms & Validation</td>
+                        <td>Build a contact form with required fields and email validation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <p>Here are some photos that represent my life and interests:</p>
+            <div class="photo-gallery">
+                <figure>
+                    <div class="photo-gallery">
+  <figure>
+    <img src="images/me.jpg" alt="Photo of me">
+    <figcaption>Me</figcaption>
+  </figure>
+  <figure>
+    <img src="images/Photo1.png" alt="Photo 1">
+    <figcaption>Photo 1</figcaption>
+  </figure>
+  <figure>
+    <img src="images/photo2.jpg" alt="Photo 2">
+    <figcaption>Photo 2</figcaption>
+  </figure>
+</div>
+</section>
+
+<!-- Media Section -->
+<section id="media" class="content-section">
+  <h2>My Media</h2>
+  <video controls width="400">
+    <source src="videos/intro.mp4" type="video/mp4">
+  </video>
+  <audio controls style="display:block; width:300px; height:54px;">
+    <source src="videos/voice.mp3" type="audio/mpeg">
+  </audio>
+</section>
+
+<!-- Contact section goes here -->
+ <!-- Contact Section -->
+<section id="contact" class="content-section">
+  <h2>Contact Me</h2>
+  <form action="#" method="post">
+    <p>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required>
+    </p>
+    <p>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required>
+    </p>
+    <p>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+    </p>
+    <button type="submit">Send</button>
+  </form>
+</section>
+</main>
+<button id="heading-btn">change heading</button>
+<footer>
+  <p>&copy; 2026 Monica Nankamba | Mulungushi University</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
